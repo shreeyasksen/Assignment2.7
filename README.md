@@ -12,14 +12,11 @@ Refer to the following markdown file for the respective sections of the class:
 Learners will understand:
 - What is Conditional rendering
 - How to manage lists
-- How to use multiple context providers
 - What are CRUD operations
 
 Learners will be able to:
 - Use logical operators in JSX for conditional rendering
-- Update and Delete items from an array using array functions
-- Use multiple context providers
-- Complete a full CRUD application in ReactJS
+- Delete items from an array using array functions
 
 ## Lesson Plan
 
