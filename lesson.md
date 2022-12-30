@@ -86,10 +86,11 @@ condition ? expression if true : expression if false
 
 Using the state as the condition, different components can be displayed based on the value of the state.
 
-In Product.js, remove / comment out the if-else and the listComponent created earlier and replace it with the following code:
+In Product.js, remove / comment out the `if-else` and the `listComponent` created earlier and replace it with the following code:
 
 ```js
 //Product.js
+//In JSX
 { showItem ? <ViewList list={list} sum={sumTotal} /> : null }
 ```
 
