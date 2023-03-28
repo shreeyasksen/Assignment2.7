@@ -1,5 +1,4 @@
 import { useState, useContext } from 'react';
-import { v4 as uuid } from 'uuid';
 
 import styles from './Product.module.css'
 import Card from './Card';
@@ -20,7 +19,7 @@ function Product() {
   */
   const handlerAddProduct = () => {
     const newItem = {
-      id: uuid(),
+      id: null, // Call uuid() here
       name: ctx.name,
       quantity: ctx.count,
       price: ctx.price,

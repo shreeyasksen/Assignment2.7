@@ -16,7 +16,7 @@ function ViewList({ list, sum, handlerDeleteItem, handlerEditItem }) {
             <th>Disc %</th>
             <th>Total $</th>
             <th>Edit</th>
-            <th>Delete</th>
+            {/* Add Delete column header here */}
           </tr>
         </thead>
         <tbody>
@@ -27,6 +27,7 @@ function ViewList({ list, sum, handlerDeleteItem, handlerEditItem }) {
               <td>{item.price}</td>
               <td>{item.discount}</td>
               <td>{item.total.toFixed(2)}</td>
+              {/* Add Delete column data cell here */}
             </tr>
           ))}
         </tbody>
