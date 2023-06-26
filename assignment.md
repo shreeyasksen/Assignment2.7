@@ -13,12 +13,12 @@ The steps are broken down into three helper functions in `Product.js`:
 `HandlerEditForm --> HandlerUpdateForm --> HandlerSubmitForm`
 
 First, add the Edit button and prop handler to `ViewList.js`:
-The following elements also needs to create:
+The following elements also needs to be created:
 1. A button to show the edit form for each item
 2. An edit form with the fields for the name, quantity, price, and discount
 3. Two buttons in the form to submit the changes and to cancel the editing
 
-### Optional Assignments
+### Optional Tasks
 
 **Task 1**
 
