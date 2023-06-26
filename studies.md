@@ -1,17 +1,3 @@
 ## Self Studies
 
-### Brief
-
-Technical knowledge is vast. Timebox yourself for 3 hours to work on the following content.
-
-### Video 
-
-- add links
-
-### Readings
-
-- add links
-
-### Helpful Links (References)
-
-- add links
+Refer to [reference](https://github.com/su-ntu-ctp/6m-software-2.1-react-intro/blob/main/reference.md) file.
