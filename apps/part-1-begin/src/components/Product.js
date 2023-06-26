@@ -3,6 +3,7 @@ import { useState, useContext } from 'react';
 import styles from './Product.module.css'
 import Card from './Card';
 import ViewList from './ViewList';
+import Button from './Button';
 
 import ProductContext from '../context/ProductContext';
 import ModeContext from '../context/ModeContext';
