@@ -22,7 +22,7 @@ The following elements also needs to be created:
 
 To get an idea of how the CRUD app should look like, refer to the folder `apps/part-2-final-assignment` to get an idea.
 
-Please refer to the sample and understand what is happening before submitting your assignment. 
+Please refer to the example and understand what is happening before submitting your assignment. 
 Include comments in your code to show your understanding.
 
 ### Optional Tasks
