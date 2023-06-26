@@ -2,6 +2,8 @@
 
 ### Brief
 
+Create an **Update** function to complete the CRUD application.
+
 The **Update** part of the app is more complex as it requires a few functional steps:
 
 1. Click on an EDIT button to select the item
@@ -17,6 +19,11 @@ The following elements also needs to be created:
 1. A button to show the edit form for each item
 2. An edit form with the fields for the name, quantity, price, and discount
 3. Two buttons in the form to submit the changes and to cancel the editing
+
+To get an idea of how the CRUD app should look like, refer to the folder `apps/part-2-final-assignment` to get an idea.
+
+Please refer to the sample and understand what is happening before submitting your assignment. 
+Include comments in your code to show your understanding.
 
 ### Optional Tasks
 
