@@ -28,7 +28,7 @@ Learners will be able to:
 | 15 mins | Discussion | Q & A |
 ||**1.5 HR MARK**|
 | 15 mins | Break | |
-| 60 mins | Concept + practical code-along | Part 2: Rendering Arrays as Lists. Complete a CRUD application by implementing **Delete** and **Update** functions. |
+| 60 mins | Concept + practical code-along | Part 2: Rendering Arrays as Lists. Complete a CRUD application by implementing **Delete**. The  **Update** functions will be developed as part of the assignment. |
 | 15 mins | Discussion | Q & A |
 | |**END CLASS 3 HR MARK**|
 
