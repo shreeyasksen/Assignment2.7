@@ -19,7 +19,7 @@ React components have the ability to render UI elements according to its current
 Copy the starter code for part-1 and start the React app.
 
 ```
-cd apps
+cd code
 cp -r part-1-begin work-1
 
 cd work-1
@@ -116,7 +116,7 @@ Test out the conditional rendering by clicking the button and see if the ViewLis
 Copy the starter code for part-2 and start the React app. We will be using a new template to do the second part of the lesson.
 
 ```
-cd apps
+cd code
 cp -r part-2-begin work-2
 
 cd work-2
