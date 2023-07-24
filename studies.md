@@ -9,3 +9,4 @@
 
 ### Helpful Links
 - [Other techniques for conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
+- [List and Keys in React](https://react.dev/learn/rendering-lists) - understand how React manages lists using keys in the Virtual DOM
