@@ -7,14 +7,16 @@ import ViewList from './ViewList';
 
 import ProductContext from '../context/ProductContext';
 import ModeContext from '../context/ModeContext';
+import EditProduct from "./EditProduct";
 import Toggle from './Toggle';
-
+import Button from './Button';
 
 function Product() {
   const ctx = useContext(ProductContext);
   const modeCtx = useContext(ModeContext);
   const [list, setList] = useState([]);
   const [sumTotal, setSumTotal] = useState(0);
+  const [itemToEdit, setItemToEdit] = useState(null);
   
   /*
     CREATE: Add a new product into the list
@@ -51,21 +53,92 @@ function Product() {
     setSumTotal(newTotal);
   }
 
-  //---------------------------------------------------------------------------
+  /* 
+    Edit a product from the list according to the given ID
+    */
+    const handleEditItem = (id) => {
+    const itemToEditList = list.filter((item) => item.id === id);
 
-  return (
+    if (itemToEditList && itemToEditList.length > 0) {
+      setItemToEdit(itemToEditList[0]);
+    }
+  };
+   const handleOnNameChange = (value) => {
+    setItemToEdit((itemToEdit) => {
+      return {
+        ...itemToEdit,
+        name: value,
+      };
+    });
+  };
+   const handleOnQuantityChange = (value) => {
+    setItemToEdit((itemToEdit) => {
+      return {
+        ...itemToEdit,
+        quantity: value,
+      };
+    });
+  };
+
+  const handleOnPriceChange = (value) => {
+    setItemToEdit((itemToEdit) => {
+      return {
+        ...itemToEdit,
+        price: value,
+      };
+    });
+  };
+
+  const handleOnDiscountChange = (value) => {
+    setItemToEdit((itemToEdit) => {
+      return {
+        ...itemToEdit,
+        discount: value,
+      };
+    });
+  };
+
+  const handleOnSubmit = () => {
+    const updateList = list.map((item) => {
+      if (item.id === itemToEdit.id) {
+        return {
+          ...itemToEdit,
+          total:
+            (itemToEdit.quantity *
+              itemToEdit.price *
+              (100 - itemToEdit.discount)) /
+            100,
+        };
+      } else {
+        return item;
+      }
+    });
+
+    setList(updateList);
+    setItemToEdit(null);
+  };
+//---------------------------------------------------------------------------
+   return (
     <div className={`${styles.container} ${modeCtx.isDark && styles.dark}`}>
       <Toggle />
-      <Card
-        handlerAddProduct={handlerAddProduct}
-      />
+      <Card handlerAddProduct={handlerAddProduct}/>
       <ViewList 
         list={list} 
         sum={sumTotal} 
         handlerDeleteItem={handlerDeleteProduct}
+        handleEditItem={handleEditItem}
       />
-    </div>
-  );
-}
-
+      {itemToEdit && (
+        <EditProduct
+          itemToEdit={itemToEdit}
+          handleOnNameChange={handleOnNameChange}
+          handleOnQuantityChange={handleOnQuantityChange}
+          handleOnPriceChange={handleOnPriceChange}
+          handleOnDiscountChange={handleOnDiscountChange}
+          handleOnSubmit={handleOnSubmit}
+          />
+           )}
+           </div>
+   );
+      }
 export default Product;

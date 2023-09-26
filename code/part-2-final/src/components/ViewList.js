@@ -15,7 +15,9 @@ function ViewList({ list, sum, handlerDeleteItem, handlerEditItem }) {
             <th>Price</th>
             <th>Disc %</th>
             <th>Total $</th>
+            <th>Edit</th>
             <th>Delete</th>
+            
           </tr>
         </thead>
         <tbody>
@@ -26,7 +28,9 @@ function ViewList({ list, sum, handlerDeleteItem, handlerEditItem }) {
               <td>{item.price}</td>
               <td>{item.discount}</td>
               <td>{item.total.toFixed(2)}</td>
+              <td onClick={() => handlerEditItem(item.id)}>📝</td>
               <td onClick={() => handlerDeleteItem(item.id)}>❌</td>
+              
             </tr>
           ))}
         </tbody>
